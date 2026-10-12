@@ -1,0 +1,25 @@
+{
+  "name": "colossi",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A cheerful three.js adventure where the boss is the dungeon: climb gentle stone giants and free them.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node scripts/routes.mjs && node scripts/flows.mjs && node scripts/smoke.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vonRotter/colossi.git"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.64.0",
+    "vite": "^8.3.4"
+  }
+}
