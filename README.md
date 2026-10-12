@@ -25,6 +25,10 @@ Actions tab). One-time setup: in the repository's **Settings → Pages**, set **
 is then served at `https://<owner>.github.io/<repo>/`. The build uses relative asset paths, so no base-path config is
 needed.
 
+Troubleshooting: leave the **Custom domain** field empty (it only accepts a full domain you own, such as
+`colossi.example.com`). If the page shows the title screen stuck on "Growing the meadow...", Pages is serving the raw
+source from a branch instead of the built game; switch **Source** back to **GitHub Actions** and push again.
+
 URL flags: `?low` lowers pixel ratio and grass density, `?debug` shows an FPS counter.
 
 ## Controls
