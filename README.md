@@ -18,6 +18,13 @@ npm run dev      # open the printed URL, click Play
 npm run build    # static build in dist/ (relative paths, host anywhere)
 ```
 
+### GitHub Pages
+
+`.github/workflows/pages.yml` builds the game and deploys `dist/` on every push to `main` (or on demand from the
+Actions tab). One-time setup: in the repository's **Settings → Pages**, set **Source** to **GitHub Actions**. The game
+is then served at `https://<owner>.github.io/<repo>/`. The build uses relative asset paths, so no base-path config is
+needed.
+
 URL flags: `?low` lowers pixel ratio and grass density, `?debug` shows an FPS counter.
 
 ## Controls
